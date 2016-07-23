@@ -1,0 +1,25 @@
+---
+Name: mysite
+After:
+  - 'framework/*'
+  - 'cms/*'
+---
+# YAML configuration for SilverStripe
+# See http://doc.silverstripe.org/framework/en/topics/configuration
+# Caution: Indentation through two spaces, not tabs
+SSViewer:
+  theme: 'rcm'
+SmtpMailer:
+  conf:
+    default_from:
+      name: Yannis Qiu
+      email: customerservice@fxrcif.com
+    charset_encoding: utf-8
+    server: smtp.exmail.qq.com
+    port: 587
+    secure: tls
+    authenticate: true
+    user: customerservice@fxrcif.com
+    pass: Yannis051423
+    debug: 0
+    lang: en

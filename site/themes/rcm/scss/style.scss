@@ -1,0 +1,77 @@
+@import './skeleton.scss';
+
+$font-color: #fff;
+$font-body-color: #fff;
+
+
+body{
+  background: url('../images/background.jpg') 0 0 no-repeat;
+  background-size:cover;
+  color: $font-color;
+  background-color: #000;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 3.0rem;
+  font-weight: 300; }
+
+  .big{
+    font-size: 20px;
+    text-indent: 3000px;
+    background: url('../images/logo.png') 0 0 no-repeat;
+    display: block;
+    width:100%;
+    height: 128px;
+    margin: 25% auto;
+    background-size:contain;
+  }
+
+  .small{
+    font-size: 10px;
+    background: url('../images/logo.png') 0 0 no-repeat;
+    display: block;
+    width:80px;
+    height: 75px;
+    margin: 0 0 0 5px;
+    background-size:contain;
+    position: absolute;
+    top:-80px;
+    left:20px;
+    opacity: 0.8;
+
+  }
+
+  .perm{
+    top:20px;
+  }
+
+
+  /* For devices larger than 550px */
+  @media (min-width: 550px) {
+    .big{
+      width:417px;
+      background-size:contain;
+    }
+
+    .small{
+      width:120px;
+      background-size:contain;
+    }
+  }
+
+  /* For devices larger than 750px */
+  @media (min-width: 750px) {
+    .small{
+      width:170px;
+      background-size:contain;
+    }
+  }
+
+
+
+@import './home.scss';
+@import './contact.scss';
+@import './navigation.scss';
+@import './fullPage.scss';
