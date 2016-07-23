@@ -12,7 +12,7 @@
 		  <% control Translations %>
 			<li>
 				<a href="$Link" hreflang="$Locale.RFC1766" title="$Title - $Locale.Nice">
-					<img src="$ThemeDir/images/lang-<% sprintf(_t('IMAGE','%2.2s'),$Locale.RFC1766) %>.gif" class="flag">
+					<img src="$ThemeDir/images/lang-<% sprintf(_t('IMAGE','%2.2s'),$Locale.RFC1766) %>.png" class="flag">
 				</a>
 			</li>
 		 <% end_control %>
