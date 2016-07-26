@@ -16,7 +16,7 @@
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="$ThemeDir/bower_components/skeleton/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="$ThemeDir/bower_components/fullPage.js/dist/jquery.fullPage.min.css" />
+	<link rel="stylesheet" type="text/css" href="$ThemeDir/bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
 
 	<% require themedCSS('style') %>
 
@@ -24,7 +24,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="$ThemeDir/bower_components/fullPage.js/dist/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="$ThemeDir/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
 
 </head>
 <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" <% if $i18nScriptDirection %>dir="$i18nScriptDirection"<% end_if %>>

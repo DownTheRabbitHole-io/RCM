@@ -1,10 +1,11 @@
 <?php
 
 global $project;
-$project = 'mysite';
+$project = 'RCM';
 
 global $database;
-$database = 'SS_mysite';
+//$database = 'SS_mysite';
+$database = 'sq_rcm2016';
 
 require_once('conf/ConfigureFromEnv.php');
 
