@@ -567,11 +567,15 @@ h1, h2, h3, h4, h5, h6 {
   display: none; }
 
 .flag {
-  width: 48px !important;
-  margin-left: -4px; }
+  width: 44px !important; }
 
 .container {
   margin-top: 200px; }
+
+#lang {
+  margin: 0px 0 80px 32px;
+  position: relative;
+  top: 20px; }
 
 .contact-btn {
   position: absolute;
@@ -600,8 +604,8 @@ h1, h2, h3, h4, h5, h6 {
     border-top: none; }
 
 img {
-  width: 80%;
-  margin: 0 10%; }
+  width: 70%;
+  margin: 0 15%; }
   img.move-up {
     margin-top: 30%;
     margin-bottom: 0; }
@@ -611,6 +615,9 @@ img {
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
+  #image5 {
+    width: 95%; }
+
   img {
     width: 100%;
     margin: auto; }
@@ -701,9 +708,6 @@ h3 {
 @media (min-width: 550px) and (min-height: 700px) {
   .column {
     height: 510px; } }
-#image5 {
-  width: 95%; }
-
 p {
   font-size: 0.8em; }
 
@@ -732,6 +736,7 @@ li {
 /* ==================================== */
 .menu-wrap {
   background-color: #000;
+  opacity: 0.7;
   position: fixed;
   top: 0;
   right: 0;
@@ -753,11 +758,12 @@ li {
   top: 70px; }
 
 .menu-sidebar li {
-  padding: 18px 22px 0; }
+  padding: 10px 22px 0;
+  margin-bottom: 0.5rem; }
 
 .menu-sidebar li > a {
   color: #f3f3f3;
-  font-size: 1.18em;
+  font-size: 0.9em;
   position: relative; }
 
 .menu-sidebar li > a::after {
@@ -801,8 +807,8 @@ li {
   position: fixed;
   width: 44px;
   height: 40px;
-  top: 50px;
-  right: 40px;
+  top: 20px;
+  right: 20px;
   padding: 4px;
   transition: .25s;
   z-index: 250; }
@@ -834,7 +840,7 @@ li {
   top: 22px; }
 
 .button-open {
-  right: 40px; }
+  right: 20px; }
 
 .button-open .menu-bar-top {
   border-color: #fff;

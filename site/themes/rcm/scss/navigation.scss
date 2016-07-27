@@ -23,6 +23,7 @@ li {
 
 .menu-wrap {
 	background-color: #000;
+	opacity: 0.7;
 	position: fixed;
 	top: 0;
 	right:0;
@@ -44,11 +45,12 @@ li {
 	top: 70px;
 }
 .menu-sidebar li {
-	padding: 18px 22px 0;
+	padding: 10px 22px 0;
+  	margin-bottom: 0.5rem;
 }
 .menu-sidebar li > a {
 	color: #f3f3f3;
-	font-size: 1.18em;
+	font-size: 0.9em;
 	position: relative;
 }
 .menu-sidebar li > a::after {
@@ -94,8 +96,8 @@ li {
 	position: fixed;
 	width: 44px;
 	height: 40px;
-	top: 50px;
-	right: 40px;
+	top: 20px;
+	right: 20px;
 	padding: 4px;
 	transition: .25s;
 	z-index: 250;
@@ -127,7 +129,7 @@ li {
 	top: 22px;
 }
 .button-open {
-	right: 40px;
+	right: 20px;
 }
 .button-open .menu-bar-top {
 	border-color: #fff;

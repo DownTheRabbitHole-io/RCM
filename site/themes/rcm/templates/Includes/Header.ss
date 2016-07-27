@@ -4,8 +4,8 @@
 		<div class="menu-bar menu-bar-middle"></div>
 		<div class="menu-bar menu-bar-bottom"></div>
 	</span>
+
 	<div class="menu-wrap">
-		<div class="menu-sidebar">
 		<% if Translations %>
 		<div id="lang" class="clear">
 		  <ul class="clear">
@@ -19,6 +19,7 @@
 		 </ul>
 		</div>
 		<% end_if %>
+		<div class="menu-sidebar">
 		<% include Navigation %>
 		</div>
 	</div>
