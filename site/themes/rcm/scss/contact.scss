@@ -1,3 +1,33 @@
 .contact-wrapper{
 	margin-top: 150px;
+
+	label{
+		font-weight: normal;
+		display: inline;
+	}
+}
+.text{
+	input{
+		color:#000;
+		min-width: 300px;
+		width:40%;
+	}
+}
+
+textarea{
+	color:#000;
+	min-width: 300px;
+	width:40%;
+}
+
+.optionset{
+
+	li{
+		float:left;
+		margin-right:15px;
+	}
+}
+
+#Form_ContactForm_Message_Holder{
+	clear: both;;
 }

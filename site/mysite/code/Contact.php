@@ -21,29 +21,31 @@ class Contact_Controller extends Page_Controller{
         'ContactForm'
     );
 
+
+
     function ContactForm() {
         // Create fields
         $fields = new FieldList(
-            new TextField('Name', 'Your Full Name*'),
-			new TextField('Phone', 'Your Phone Number'),
-            new EmailField('Email', 'Your email*'),
+            new TextField('Name', _t('CONTACT.FULLNAME',"Your Full Name") . '*'),
+			new TextField('Phone', _t('CONTACT.PHONE','Your Phone Number')),
+            new EmailField('Email', _t('CONTACT.EMAIL',"Your Email") . '*'),
 			new OptionsetField(
 			   $name = "Type",
 			   $title = "",
 			   $source = array(
-			      "Open Account" => "Open Account",
-			      "Deposit" => "Deposit",
-			      "Withdrawl" => "Withdrawl",
-			      "Enquiry" => "Enquiry"
+			      "Open Account" => _t('CONTACT.OPENACCOUNT',"Open Account"),
+			      "Deposit" =>  _t('CONTACT.DEPOSIT',"Deposit"),
+			      "Withdrawl" =>  _t('CONTACT.WITHDRAWL',"Withdrawl"),
+			      "Enquiry" =>  _t('CONTACT.ENQUIRY',"Enquiry")
 			   ),
 			   $value = "Open Account"
 			  ),
-            new TextareaField('Message','Message*')
+            new TextareaField('Message',_t('CONTACT.MESSAGE',"Message") . '*')
         );
 
         // Create action
         $actions = new FieldList(
-            new FormAction('SendContactForm', 'Send')
+            new FormAction('SendContactForm', _t('CONTACT.SEND',"Send"))
         );
 
         // Create Validators

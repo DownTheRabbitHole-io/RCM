@@ -12,6 +12,7 @@ require_once('conf/ConfigureFromEnv.php');
 
 // Set the site locale
 i18n::set_locale('en_NZ');
+//i18n::set_locale('zh_CN');
 
 //i18n::$common_languages = array_merge(i18n::$common_languages, array('zh'=>array('Chinese','中国的')));
 //i18n::$common_locales = array_merge(i18n::$common_locales, array('zh_CN'=>array('Chinese','中国的'));
@@ -27,6 +28,8 @@ Translatable::set_allowed_locales(array(
    'zh_CN'  //Chinese
    )
 );
+
+SiteConfig::add_extension('Translatable');
 
 Object::add_extension('SiteTree', 'Translatable');
 Object::add_extension('SiteConfig', 'Translatable'); // 2.4 or newer only

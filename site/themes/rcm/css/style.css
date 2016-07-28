@@ -577,6 +577,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 20px; }
 
+.content p {
+  opacity: 0.7; }
+.content a {
+  text-decoration: none;
+  color: #fed11f;
+  border-bottom: solid 1px #fed11f; }
+  .content a:hover {
+    color: #fff;
+    border-bottom: solid 1px #fff; }
+
 .contact-btn {
   position: absolute;
   top: -4px;
@@ -714,9 +724,26 @@ p {
 /* Larger than phablet */
 .contact-wrapper {
   margin-top: 150px; }
+  .contact-wrapper label {
+    font-weight: normal;
+    display: inline; }
 
-a {
-  text-decoration: none; }
+.text input {
+  color: #000;
+  min-width: 300px;
+  width: 40%; }
+
+textarea {
+  color: #000;
+  min-width: 300px;
+  width: 40%; }
+
+.optionset li {
+  float: left;
+  margin-right: 15px; }
+
+#Form_ContactForm_Message_Holder {
+  clear: both; }
 
 ul {
   padding-left: 0; }
@@ -736,7 +763,8 @@ li {
 /* ==================================== */
 .menu-wrap {
   background-color: #000;
-  opacity: 0.7;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   right: 0;
@@ -747,6 +775,8 @@ li {
   overflow: auto;
   transition: .25s;
   z-index: 200; }
+  .menu-wrap a {
+    text-decoration: none; }
 
 .menu-show {
   margin-right: 0;

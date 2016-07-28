@@ -33,6 +33,9 @@ class Page_Controller extends ContentController {
 		Requirements::javascript("mysite/javascript/Page.js");
 		// You can include any CSS or JS required by your project here.
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
+		if($this->dataRecord->hasExtension('Translatable')) {
+			i18n::set_locale($this->dataRecord->Locale);
+		}
 	}
 
 }

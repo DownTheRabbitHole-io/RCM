@@ -1,6 +1,5 @@
-a {
-	text-decoration: none;
-}
+
+
 ul {
 	padding-left: 0;
 }
@@ -10,6 +9,7 @@ li {
 * {
 	box-sizing: border-box;
 }
+
 
 ::selection {
 	background-color: #EBEBF2;
@@ -23,7 +23,8 @@ li {
 
 .menu-wrap {
 	background-color: #000;
-	opacity: 0.7;
+	background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, .7);
 	position: fixed;
 	top: 0;
 	right:0;
@@ -34,6 +35,12 @@ li {
 	overflow: auto;
 	transition: .25s;
 	z-index: 200;
+
+	a {
+		text-decoration: none;
+	}
+
+
 }
 .menu-show {
 	margin-right: 0;

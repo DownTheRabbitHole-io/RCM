@@ -4,7 +4,7 @@
     <div class="row">
 	<div class="contact-wrapper">
 		<div class="contact-form">
-		  <h1>$Title</h1>
+		  <h3>$Title</h3>
 		  <% if Success %>
 	        $SubmitText
 	    <% else %>

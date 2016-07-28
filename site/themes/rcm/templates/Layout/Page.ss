@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
 	<article>
-		<h1>$Title</h1>
+		<h3>$Title</h3>
 		<div class="content">$Content</div>
 	</article>
 		$Form
