@@ -9,53 +9,60 @@ zh_CN:
     ENQUIRY: 问询
     MESSAGE: 留言
     SEND: 发送
-  APPLICATION:
-    Title:
-    FirstName:
-    Surname:
-    Nationality:
-    DOB:
-    Gender:
-    Male:
-    Female:
-    MaritalStatus:
-    Single:
-    Defacto:
-    Married:
-    Divorced:
-    Widowed:
-    Email: 电子邮件地址
+  APPLICATION: 申请表
+    Title: 称谓
+    FirstName: 名
+    Surname: 姓
+    Nationality: 国籍
+    DOB: 出生日期
+    Gender: 性别
+    Male: 男
+    Female: 女
+    MaritalStatus: 婚姻状况
+    Single: 单身
+    Defacto: 事实婚姻
+    Married: 已婚
+    Divorced: 离异
+    Widowed: 寡居
+    Email: 电邮
     Phone: 电话
-    Fax:
-    CurrentAddress:
-    Country:
-    BankingDetails:
-    NameofBank:
-    BaseCurrencyofAccount:
-    AccountHoldersName:
-    AccountNumber:
-    EmploymentInformation:
-    CurrentEmployer:
-    CurrentEmployerDisc:
-    EmployerAddress:
-    City:
-    State:
-    CountryEmployer:
-    EmailEmployer:
-    PhoneEmployer:
-    FaxEmployer:
-    Position:
+    Fax: 传真
+    CurrentAddress: 现住址
+    Country: 国家
+    BankingDetails: 银行细节
+    NameofBank: 银行名称
+    BaseCurrencyofAccount: 何种货币帐户
+    AccountHoldersName: 帐户所有人姓名
+    AccountNumber: 帐号
+    EmploymentInformation: 工作情况
+    CurrentEmployer: 单位
+    CurrentEmployerDisc: （如果个体经营请说明其生意名称和情况）
+    EmployerAddress: 单位地址
+    City: 城市
+    State: 省
+    CountryEmployer: 国家
+    EmailEmployer: 电邮
+    PhoneEmployer: 电话
+    FaxEmployer: 传真
+    Position: 职位
     IncomeType:
-    AnnualIncome:
-    FinancialInformation:
-    ApproximateNetWorth:
-    InvestmentObjective:
-    TradingExperience:
-    Equities:
-    Options:
-    FuturesCFDs:
-    FOREX:
-    NextSteps:
-    UploadID:
-    UploadStatement:
-    Send:
+    Hourly:
+    Salary:
+    1To3:
+    3To5:
+    Over5:
+    Speculative:
+    Hedging:
+    AnnualIncome: 年收入
+    FinancialInformation: 财务状况
+    ApproximateNetWorth: 大约净资产
+    InvestmentObjective: 投资性质
+    TradingExperience: 大约投资额
+    Equities: 证券
+    Options: 期权
+    FuturesCFDs: 期货/ 差价合约
+    FOREX: 外汇
+    NextSteps: 下一步
+    UploadID: 上传身份证明彩色复印件
+    UploadStatement: 上传银行信息彩色复印件
+    Send: 发送

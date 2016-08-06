@@ -1,0 +1,594 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+/*
+add below property (height: 100%;) to the existing css of client's website
+otherwise there will design issue on bigger screen
+*/
+body, html {
+	height: 100%;
+}
+
+
+
+/* design holder */
+#hold .navbar {
+	visibility: hidden !important;
+	margin-bottom: 0px !important;
+	max-height: 1px !important;
+}
+
+#hold .navbar .nav>li>a {
+	padding: 0px !important;
+	line-height: 1px !important;
+}
+
+#hold {
+
+}
+
+.cs-appcal {
+	padding: 35px;
+}
+
+label{
+	color:#393d3f;
+}
+
+
+
+/* we are starting for here */
+#cs-appcal-wizard  .tab-content {
+	background: #fff;
+	padding: 30px 50px;
+	border-radius: 3px;
+}
+
+#cs-appcal-wizard  .tab-content .heading {
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#cs-appcal-wizard  .tab-content  h2 {
+	font-size: 23px;
+	color: #393d3f;
+	font-weight: bold;
+}
+
+#cs-appcal-wizard  .tab-content  p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	font-size: 13px;
+	color: #393d3f;
+}
+
+#cs-appcal-wizard .tab-content .row label,
+#cs-appcal-wizard .tab-content .row  div[class*="col-"] strong,
+#cs-appcal-wizard .tab-content .row strong {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	font-weight: normal;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#cs-appcal-wizard .tab-content .row label small {
+	display: block;
+}
+
+#cs-appcal-wizard strong.chk-label.appcal-error {
+	border-bottom: solid 2px #d66868;
+	-webkit-transition: border-bottom 0.2s linear;
+	-moz-transition: border-bottom 0.2s linear;
+	-ms-transition: border-bottom 0.2s linear;
+	-o-transition: border-bottom 0.2s linear;
+	transition: border-bottom 0.2s linear;
+}
+
+#cs-appcal-wizard  .tab-content ol  {
+	margin-left: 14px;
+	list-style: decimal !important;
+	margin-bottom: 0 !important;
+}
+
+#cs-appcal-wizard  .tab-content ol li {
+	list-style: decimal !important;
+}
+
+#cs-appcal-wizard  .tab-content ol li p {
+	margin-left: 23px;
+}
+
+#cs-appcal-wizard .tab-content .row {
+	margin-bottom: 25px;
+}
+
+#cs-appcal-wizard .tab-content .row .form-control {
+	border: none;
+    background: #eee;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+    height: 45px;
+}
+
+#cs-appcal-wizard .tab-content .row .form-control.error {
+	border: solid 2px #d76969 !important;
+	border-color: rgb(215, 105, 105) !important;
+
+	/* remove below code to remove shaking from invalid fields */
+	-webkit-animation: invalid .1s ease-in;
+	-moz-animation: invalid .2s ease-in;
+	-ms-animation: invalid .2s ease-in;
+	-o-animation: invalid .2s ease-in;
+	animation: invalid .2s ease-in;
+	/* upto here */
+}
+
+#cs-appcal-wizard .tab-content .row .form-control.valid {
+	border: solid 2px #39b54a;
+	font-weight: bold;
+	background: url('../images/in-check.png') no-repeat 93% center #eee;
+}
+
+#cs-appcal-wizard .tab-content .row .form-control {
+	font-weight: bold;
+}
+
+#cs-appcal-wizard .tab-content .row .form-control.error {
+	font-weight: normal;
+}
+
+#cs-appcal-wizard .tab-content .row .form-control:focus {
+	outline: none !important;
+	background-image: none !important;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.025);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.025);
+}
+
+#cs-appcal-wizard  .bootstrap-select .dropdown-toggle,
+#cs-appcal-wizard  .bootstrap-select .dropdown-toggle:focus,
+#cs-appcal-wizard  .bootstrap-select .dropdown-toggle:hover {
+	outline: none !important;
+	background-image: none !important;
+	border: none !important;
+    background: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+    height: 44px;
+    padding: 0 15px;
+}
+
+#cs-appcal-wizard .tab-content .row  div[class*="col-"] strong,
+#cs-appcal-wizard .tab-content .row  strong {
+	display: block;
+	margin-bottom: 15px;
+}
+
+#cs-appcal-wizard .tab-content .row .col-xs-12 strong  {
+	/* enable this line and check 4th tab validation errors, if feels ok, then enable it I prefer to keep it disabled */
+	/* display: inline-block !important; */
+	margin-bottom: 20px !important;
+}
+
+#cs-appcal-wizard  .tab-content .row input[type="checkbox"] {
+	display:none;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    margin-bottom: 7px;
+	float: left;
+	width: 50%;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox.full {
+	width: 100%;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox span.items,
+#cs-appcal-wizard .tab-content .row label.cbox span.itext {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox span.items.appcal-error:before {
+	border: solid 2px #d76969;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox span.itext.appcal-error {
+	color: #d76969;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox span.itext {
+	line-height: 19px;
+    margin-left: 7px;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox.optimize span.items {
+	width: 6%;
+}
+
+#cs-appcal-wizard .tab-content .row label.cbox.optimize span.itext {
+	width: 86%;
+}
+
+#cs-appcal-wizard  .tab-content .row  input[type="checkbox"] + .items:before {
+	content: "";
+    display: inline-block;
+    background: url(../images/uncheck.png) no-repeat center center;
+    width: 19px;
+    height: 19px;
+    border-radius: 3px;
+}
+
+#cs-appcal-wizard  .tab-content .row input[type="checkbox"]:checked + .items:before {
+	content: "";
+	background: url(../images/check.png) no-repeat center center;
+
+	/* remove below code to remove ease effect from checkboxs */
+	-webkit-animation: tick .1s ease-in;
+	-moz-animation: tick .1s ease-in;
+	-ms-animation: tick .1s ease-in;
+	-o-animation: tick .1s ease-in;
+	animation: tick .1s ease-in;
+	/* upto here */
+}
+
+/* disable the code will display error messages on tooltip under every input */
+#cs-appcal-wizard  .form-error {
+	display: none;
+}
+
+#cs-appcal-wizard  .up-btn .form-error {
+	display: block;
+}
+
+#cs-appcal-wizard  .help-block {
+	position: absolute;
+    background: rgb(215, 105, 105);
+    padding: 7px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 10px;
+}
+
+#cs-appcal-wizard  .help-block:after {
+	bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: rgb(215, 105, 105);
+    border-width: 7px;
+    margin-left: -48px;
+}
+
+#cs-appcal-wizard .form-bottom,
+#cs-appcal-wizard .form-bottom  div[class*="col-"] {
+	padding: 0px;
+	margin: 0px;
+}
+
+#cs-appcal-wizard .pager li>a,
+#cs-appcal-wizard .pager li>span {
+	width: 46%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+    background: #555555;
+    color: #fff;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    text-shadow: none;
+}
+
+#cs-appcal-wizard .pager .next>a,
+#cs-appcal-wizard .pager .next>span {
+	background: #d3ad00;
+}
+
+#cs-appcal-wizard .pager .next.disabled>a,
+#cs-appcal-wizard .pager .next.disabled>span {
+	display: none;
+}
+
+#cs-appcal-wizard .pager .next .cs-submit {
+	display: none;
+}
+
+#cs-appcal-wizard .pager .next.disabled .cs-submit {
+	display: block;
+}
+
+#cs-appcal-wizard .cs-submit {
+	display: block;
+    float: right;
+    width: 48%;
+    background: #39b54a;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#cs-appcal-wizard .form-bottom .current-tab {
+	font-weight: 100;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    padding: 15px 0;
+	font-size: 13px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#cs-appcal-wizard .bootstrap-select.btn-group .dropdown-menu li a:focus {
+	outline: none !important;
+	background-image: none !important;
+	border: none !important;
+    background: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+#cs-appcal-wizard  .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+	font-weight: 600;
+}
+
+#cs-appcal-wizard  .up-btn {
+	position: relative;
+    display: block;
+    max-width: 200px;
+    margin: 28px auto;
+    text-align: center;
+    font-weight: normal;
+}
+
+#cs-appcal-wizard  .file-upload-label {
+	display: block;
+    padding: 12px;
+    color: #fff;
+    background: #d3ad00;
+    border-radius: .4em;
+    transition: background .3s;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#cs-appcal-wizard  .up-btn.has-error .file-upload-label {
+	background: rgb(215, 105, 105);
+}
+
+#cs-appcal-wizard  .up-btn.has-success .file-upload-label {
+	background: #39b54a;
+}
+
+#cs-appcal-wizard  .file-upload-label:hover {
+	cursor: pointer;
+	background: #000;
+}
+
+#cs-appcal-wizard  .file-upload-input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 13px;
+	width: 0;
+	height: 100%;
+	opacity: 0;
+}
+
+@-webkit-keyframes tick {
+	0%{
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	90%{
+		-webkit-transform: scale(1.3);
+		transform: scale(1.3);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-moz-keyframes tick {
+	0%{
+		-moz-transform: scale(0);
+		transform: scale(0);
+	}
+	90%{
+		-moz-transform: scale(1.3);
+		transform: scale(1.3);
+	}
+	100%{
+		-moz-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-ms-keyframes tick {
+	0%{
+		-ms-transform:scale(0);
+		transform: scale(0);
+	}
+	90%{
+		-ms-transform: scale(1.3);
+		transform: scale(1.3);
+	}
+	100%{
+		-ms-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@-o-keyframes tick {
+	0%{
+		-o-transform: scale(0);
+		transform: scale(0);
+	}
+	90%{
+		-o-transform: scale(1.3);
+		transform: scale(1.3);
+	}
+	100%{
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+@keyframes tick {
+	0%{
+		-webkit-transform: scale(0);
+		-moz-transform: scale(0);
+		-ms-transform: scale(0);
+		-o-transform: scale(0);
+		transform: scale(0);
+	}
+	90%{
+		-webkit-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-o-transform: scale(1.3);
+		transform: scale(1.3);
+	}
+	100%{
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+
+@-webkit-keyframes invalid {
+	0%, 100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+    10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+    20%, 40%, 60%, 80% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@-moz-keyframes invalid {
+	0%, 100% {
+		-moz-transform: translateX(0);
+		transform: translateX(0);
+	}
+    10%, 30%, 50%, 70%, 90% {
+		-moz-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+    20%, 40%, 60%, 80% {
+		-moz-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@-ms-keyframes invalid {
+	0%, 100% {
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+    10%, 30%, 50%, 70%, 90% {
+		-ms-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+    20%, 40%, 60%, 80% {
+		-ms-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@-o-keyframes invalid {
+	0%, 100% {
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+    10%, 30%, 50%, 70%, 90% {
+		-o-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+    20%, 40%, 60%, 80% {
+		-o-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+@keyframes invalid {
+    0%, 100% {
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);
+	}
+    10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translateX(-10px);
+		-moz-transform: translateX(-10px);
+		-ms-transform: translateX(-10px);
+		-o-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+    20%, 40%, 60%, 80% {
+		-webkit-transform: translateX(10px);
+		-moz-transform: translateX(10px);
+		-ms-transform: translateX(10px);
+		-o-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+}
+
+/* fix */
+.no-padding-left {
+	padding-left: 0px;
+}
+
+@media (max-width:768px) {
+	.col-sm-6 {
+		margin-top: 15px;
+	}
+}
+
+@media (max-width:500px) {
+	.logo {
+		text-align: center;
+	}
+
+	.cs-appcal {
+		padding: 35px 0px;
+	}
+
+	#cs-appcal-wizard  .tab-content {
+		padding: 20px;
+	}
+}
