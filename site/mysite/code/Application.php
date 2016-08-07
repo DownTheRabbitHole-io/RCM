@@ -43,6 +43,12 @@ class Application_Controller extends Page_Controller{
         'ApplicationForm'
     );
 
+	public function init() {
+		parent::init();
+		if($this->dataRecord->hasExtension('Translatable')) {
+			i18n::set_locale($this->dataRecord->Locale);
+		}
+	}
 
     function ApplicationForm() {
         // Create fields
@@ -133,15 +139,13 @@ class Application_Controller extends Page_Controller{
 				->setAttribute('class', 'form-control'),
 			FileField::create('UploadID','Upload I.D.')
 			    ->setAttribute('class', 'file-upload-input')
-				->setAttribute('data-validation', 'mime size required')
-				->setAttribute('data-validation-allowing' , 'jpg, png, pdf')
+				->setAttribute('data-validation', 'size required')
 				->setAttribute('data-validation-max-size', '800kb')
 				->setAttribute('data-validation-error-msg-size', 'File is too large')
 				->setAttribute('data-validation-error-msg-required', 'Nothing is selected'),
 			FileField::create('UploadStatement','Upload Statement')
 			    ->setAttribute('class', 'file-upload-input')
-				->setAttribute('data-validation', 'mime size required')
-				->setAttribute('data-validation-allowing' , 'pdf, xls')
+				->setAttribute('data-validation', 'size required')
 				->setAttribute('data-validation-max-size', '3mb')
 				->setAttribute('data-validation-error-msg-size', 'File is too large')
 				->setAttribute('data-validation-error-msg-required', 'Nothing is selected')
@@ -155,6 +159,10 @@ class Application_Controller extends Page_Controller{
 
 
 		$form = new Form($this, 'ApplicationForm', $fields, $actions, null);
+
+		if($this->dataRecord->hasExtension('Translatable')) {
+			i18n::set_locale($this->dataRecord->Locale);
+		}
 
 		$form->setTemplate('ApplicationForm');
 

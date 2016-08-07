@@ -38,5 +38,9 @@
         <p style="font-size:1.4em;color:#222;" class="comments">FuturesCFDs: $FuturesCFDs</P>
 		<p style="font-size:1.4em;color:#222;" class="comments">FOREX: $FOREX</P>
         <p style="font-size:1.4em;color:#222;" class="comments">TradingExperience: $TradingExperience</P>
+
+		<p>Uploaded Images and Documents are available from the CMS:</p>
+		<p>Uploaded ID: <a href="http://www.rcm.net.nz$UploadID.URL">http://www.rcm.net.nz$UploadID.URL</p>
+	    <p>Uploaded Statement: <a href="http://www.rcm.net.nz$UploadStatement.URL">http://www.rcm.net.nz$UploadStatement.URL</p>
     </body>
 </html>

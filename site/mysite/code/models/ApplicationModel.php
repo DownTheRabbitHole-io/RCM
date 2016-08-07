@@ -94,7 +94,8 @@ class ApplicationModel extends DataObject {
 		'FOREX' ,
 		'TradingExperience' ,
 		'TOC',
-		'SortID',
+		'UploadID' => 'UploadID.URL',
+		'UploadStatement' => 'UploadStatement.Link'
 	);
 
 	/**

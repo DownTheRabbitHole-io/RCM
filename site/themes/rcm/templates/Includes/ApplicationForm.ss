@@ -44,27 +44,27 @@
 							with differnt animation class] -->
 					<div class="tab-pane animated fadeIn" id="tab1">
 
-						<h2 class="heading"><% _t('APPLICATION.Title',"Applicant Information") %></h2>
+						<h2 class="heading"><%t APPLICATION.Title "Title" %></h2>
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_FirstName"><% _t('APPLICATION.FirstName',"FirstName") %></label>
+								<label for="{$FormName}_FirstName"><%t APPLICATION.FirstName  "FirstName" %></label>
 								$Fields.dataFieldByName(FirstName)
 								$Fields.dataFieldByName(SecurityID)
 							</div>
 							<div class="col-sm-6">
-								<label for="{$FormName}_FirstName"><% _t('APPLICATION.Surname',"Surname / Family name") %></label>
+								<label for="{$FormName}_FirstName"><%t APPLICATION.Surname  "Surname / Family name" %></label>
 								$Fields.dataFieldByName(Surname)
 							</div>
 						</div><!-- ./ ER -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_Nationality"><% _t('APPLICATION.Nationality',"Nationality") %></label>
+								<label for="{$FormName}_Nationality"><%t APPLICATION.Nationality  "Nationality" %></label>
 								$Fields.dataFieldByName(Nationality)
 							</div>
 							<div class="col-sm-6">
-								<label for="{$FormName}_DOB"><% _t('APPLICATION.DOB',"Date of Birth") %></label>
+								<label for="{$FormName}_DOB"><%t APPLICATION.DOB  "Date of Birth" %></label>
 								$Fields.dataFieldByName(DOB)
 							</div>
 						</div><!-- ./ ER -->
@@ -73,46 +73,46 @@
 
 							<!-- checkbox column for gender -->
 							<div class="col-sm-6">
-								<strong class="chk-label"><% _t('APPLICATION.Gender',"Gender") %></strong>
+								<strong class="chk-label"><%t APPLICATION.Gender  "Gender" %></strong>
 								<label for="genderm" class="cbox">
 									<input type="checkbox" id="genderm" value="1" name="gender" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Male',"Male") %></span>
+									<span class="itext"><%t APPLICATION.Male  "Male" %></span>
 								</label>
 								<label for="genderf" class="cbox">
 									<input type="checkbox" id="genderf" value="2" name="gender">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Female',"Female") %></span>
+									<span class="itext"><%t APPLICATION.Female  "Female" %></span>
 								</label>
 							</div>
 
 							<!-- checkbox column for marital status -->
 							<div class="col-sm-6">
-								<strong class="chk-label"><% _t('APPLICATION.MaritalStatus',"Marital Status") %></strong>
+								<strong class="chk-label"><%t APPLICATION.MaritalStatus  "Marital Status" %></strong>
 								<label for="mrtalstsa" class="cbox">
 									<input type="checkbox" id="mrtalstsa" data-validation="required" value="1" name="mrtalsts" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Single',"Single") %></span>
+									<span class="itext"><%t APPLICATION.Single  "Single" %></span>
 								</label>
 								<label for="mrtalstsb" class="cbox">
 									<input type="checkbox" id="mrtalstsb" value="2" name="mrtalsts">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Married',"Married") %></span>
+									<span class="itext"><%t APPLICATION.Married  "Married" %></span>
 								</label>
 								<label for="mrtalstsc" class="cbox">
 									<input type="checkbox" id="mrtalstsc" value="3" name="mrtalsts">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Defacto',"Defacto") %></span>
+									<span class="itext"><%t APPLICATION.Defacto  "Defacto" %></span>
 								</label>
 								<label for="mrtalstsd" class="cbox">
 									<input type="checkbox" id="mrtalstsd" value="4" name="mrtalsts">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Divorced',"Divorced") %></span>
+									<span class="itext"><%t APPLICATION.Divorced  "Divorced" %></span>
 								</label>
 								<label for="mrtalstse" class="cbox">
 									<input type="checkbox" id="mrtalstse" value="5" name="mrtalsts">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Widowed',"Widowed") %></span>
+									<span class="itext"><%t APPLICATION.Widowed  "Widowed" %></span>
 								</label>
 							</div><!-- ./ end of marital status -->
 
@@ -120,19 +120,19 @@
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<label for="{$FormName}_Email"><% _t('APPLICATION.Email',"Email") %></label>
+								<label for="{$FormName}_Email"><%t APPLICATION.Email  "Email" %></label>
 								$Fields.dataFieldByName(Email)
 							</div>
 						</div><!-- ./ ER -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_Phone"><% _t('APPLICATION.Phone',"Phone") %></label>
+								<label for="{$FormName}_Phone"><%t APPLICATION.Phone  "Phone" %></label>
 								$Fields.dataFieldByName(Phone)
 								<span id="phlenth" class="hidden">10</span>
 							</div>
 							<div class="col-sm-6">
-								<label for="{$FormName}_Fax"><% _t('APPLICATION.Fax',"Fax") %></label>
+								<label for="{$FormName}_Fax"><%t APPLICATION.Fax  "Fax" %></label>
 								$Fields.dataFieldByName(Fax)
 								<span id="fxlenth" class="hidden">12</span>
 							</div>
@@ -140,14 +140,14 @@
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<label for="{$FormName}_CurrentAddress"><% _t('APPLICATION.CurrentAddress',"Current Address") %></label>
+								<label for="{$FormName}_CurrentAddress"><%t APPLICATION.CurrentAddress  "Current Address" %></label>
 								$Fields.dataFieldByName(CurrentAddress)
 							</div>
 						</div><!-- ./ ER -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_Country"><% _t('APPLICATION.Country',"Country") %></label>
+								<label for="{$FormName}_Country"><%t APPLICATION.Country  "Country" %></label>
 								$Fields.dataFieldByName(Country)
 							</div>
 						</div><!-- ./ ER -->
@@ -167,32 +167,32 @@
 							[animation classes here "animated pulse"] -->
 					<div class="tab-pane animated pulse" id="tab2">
 
-						<h2 class="heading"><% _t('APPLICATION.BankingDetails',"Banking Details") %></h2>
+						<h2 class="heading"><%t APPLICATION.BankingDetails  "Banking Details" %></h2>
 
 						<div class="row"><!-- SR -->
 
 							<div class="col-sm-6">
-								<label for="{$FormName}_NameofBank"><% _t('APPLICATION.NameofBank',"Name of Bank") %></label>
+								<label for="{$FormName}_NameofBank"><%t APPLICATION.NameofBank  "Name of Bank" %></label>
 								$Fields.dataFieldByName(NameofBank)
 							</div>
 
 							<div class="col-sm-6">
-								<label for="bcurrency"><% _t('APPLICATION.BaseCurrencyofAccount',"Base Currency of Account") %></label>
-								$Fields.dataFieldByName(BaseCurrencyofAccount)								
+								<label for="bcurrency"><%t APPLICATION.BaseCurrencyofAccount  "Base Currency of Account" %></label>
+								$Fields.dataFieldByName(BaseCurrencyofAccount)
 							</div>
 
 						</div><!-- ./ ER -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<label for="{$FormName}_AccountHoldersName"><% _t('APPLICATION.AccountHoldersName',"Account Holders Name") %></label>
+								<label for="{$FormName}_AccountHoldersName"><%t APPLICATION.AccountHoldersName  "Account Holders Name" %></label>
 								$Fields.dataFieldByName(AccountHoldersName)
 							</div>
 						</div><!-- ./ ER -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<label for="{$FormName}_AccountNumber"><% _t('APPLICATION.AccountNumber',"Account Number") %></label>
+								<label for="{$FormName}_AccountNumber"><%t APPLICATION.AccountNumber  "Account Number" %></label>
 								$Fields.dataFieldByName(AccountNumber)
 							</div>
 						</div><!-- ./ ER -->
@@ -215,13 +215,13 @@
 							whatever if users enter data in the following fields (email, phone and fax) then it must valid email or phone] -->
 					<div class="tab-pane animated fadeIn" id="tab3">
 
-						<h2 class="heading"><% _t('APPLICATION.EmploymentInformation',"Employment Information(optional)") %></h2>
+						<h2 class="heading"><%t APPLICATION.EmploymentInformation  "Employment Information(optional)" %></h2>
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
 								<label for="{$FormName}_CurrentEmployer">
-									Current Employer
-									<small><% _t('APPLICATION.CurrentEmployerDisc',"(If self-employed please state nature of business and its trading name)") %></small>
+									<%t APPLICATION.CurrentEmployer  "Current Employer" %>
+									<small><%t APPLICATION.CurrentEmployerDisc  "(If self-employed please state nature of business and its trading name)" %></small>
 								</label>
 								$Fields.dataFieldByName(CurrentEmployer)
 							</div>
@@ -229,7 +229,7 @@
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<label for="{$FormName}_WorkYear"><% _t('APPLICATION.WorkYear',"How long have you been with this Employer?") %></label>
+								<label for="{$FormName}_WorkYear"><%t APPLICATION.WorkYear  "How long have you been with this Employer?" %></label>
 								<div class="col-sm-6 no-padding-left">
 									$Fields.dataFieldByName(WorkYear)
 								</div>
@@ -238,7 +238,7 @@
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<label for="{$FormName}_EmployerAddress"><% _t('APPLICATION.EmployerAddress',"Employer Address") %></label>
+								<label for="{$FormName}_EmployerAddress"><%t APPLICATION.EmployerAddress  "Employer Address" %></label>
 								<div class="col-sm-6 no-padding-left">
 									$Fields.dataFieldByName(EmployerAddress)
 								</div>
@@ -247,18 +247,18 @@
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_City"><% _t('APPLICATION.City',"City") %></label>
+								<label for="{$FormName}_City"><%t APPLICATION.City  "City" %></label>
 								$Fields.dataFieldByName(City)
 							</div>
 							<div class="col-sm-6">
-							<label for="{$FormName}_State"><% _t('APPLICATION.State',"State") %></label>
+							<label for="{$FormName}_State"><%t APPLICATION.State  "State" %></label>
 							$Fields.dataFieldByName(State)
 							</div>
 						</div><!-- ./ ER -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_CountryEmployer"><% _t('APPLICATION.CountryEmployer',"Country") %></label>
+								<label for="{$FormName}_CountryEmployer"><%t APPLICATION.CountryEmployer  "Country" %></label>
 								$Fields.dataFieldByName(CountryEmployer)
 							</div>
 						</div><!-- ./ ER -->
@@ -266,7 +266,7 @@
 						<!-- I have validation (but not required) -->
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<label for="{$FormName}_EmailEmployer"><% _t('APPLICATION.EmailEmployer',"Email") %></label>
+								<label for="{$FormName}_EmailEmployer"><%t APPLICATION.EmailEmployer  "Email" %></label>
 								$Fields.dataFieldByName(EmailEmployer)
 							</div>
 						</div><!-- ./ ER -->
@@ -274,12 +274,12 @@
 						<!-- we also validations (but not required)) -->
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_PhoneEmployer"><% _t('APPLICATION.PhoneEmployer',"Phone") %></label>
+								<label for="{$FormName}_PhoneEmployer"><%t APPLICATION.PhoneEmployer  "Phone" %></label>
 								$Fields.dataFieldByName(PhoneEmployer)
 								<span id="phlenth_2" class="hidden">10</span>
 							</div>
 							<div class="col-sm-6">
-								<label for="{$FormName}_FaxEmployer"><% _t('APPLICATION.FaxEmployer',"Fax") %></label>
+								<label for="{$FormName}_FaxEmployer"><%t APPLICATION.FaxEmployer  "Fax" %></label>
 								$Fields.dataFieldByName(FaxEmployer)
 								<span id="fxlenth_2" class="hidden">12</span>
 							</div>
@@ -287,27 +287,27 @@
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_Position"><% _t('APPLICATION.Position',"Position") %></label>
+								<label for="{$FormName}_Position"><%t APPLICATION.Position  "Position" %></label>
 								$Fields.dataFieldByName(Position)
 							</div>
 							<div class="col-sm-6">
-								<strong class="chk-label"><% _t('APPLICATION.IncomeType',"Income Type") %></strong>
+								<strong class="chk-label"><%t APPLICATION.IncomeType  "Income Type" %></strong>
 								<label for="inctypea" class="cbox">
 									<input type="checkbox" id="inctypea"  value="1" name="inctype" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Hourly',"Hourly") %></span>
+									<span class="itext"><%t APPLICATION.Hourly  "Hourly" %></span>
 								</label>
 								<label for="inctypeb" class="cbox">
 									<input type="checkbox" id="inctypeb" value="2" name="inctype">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Salary',"Salary") %></span>
+									<span class="itext"><%t APPLICATION.Salary  "Salary" %></span>
 								</label>
 							</div>
 						</div><!-- ./ ER -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_AnnualIncome"><% _t('APPLICATION.AnnualIncome',"Annual Income") %></label>
+								<label for="{$FormName}_AnnualIncome"><%t APPLICATION.AnnualIncome  "Annual Income" %></label>
 								$Fields.dataFieldByName(AnnualIncome)
 							</div>
 						</div><!-- ./ ER -->
@@ -328,14 +328,14 @@
 							[animation classes here "animated fadeIn"] -->
 					<div class="tab-pane animated fadeIn" id="tab4">
 
-						<h2 class="heading"><% _t('APPLICATION.FinancialInformation',"Financial Information (Optional)") %></h2>
+						<h2 class="heading"><%t APPLICATION.FinancialInformation  "Financial Information (Optional)" %></h2>
 
 						<!-- look this section containing checkboxes in different style
 							that is why the validation scripts for these are different, however
 							this section might need to be optional, I think -->
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<strong class="chk-label"><% _t('APPLICATION.ApproximateNetWorth',"Approximate Net Worth") %></strong>
+								<strong class="chk-label"><%t APPLICATION.ApproximateNetWorth  "Approximate Net Worth" %></strong>
 							</div>
 							<div class="col-sm-6">
 								<label for="anwortha" class="cbox full">
@@ -362,135 +362,135 @@
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<strong class="chk-label"><% _t('APPLICATION.InvestmentObjective',"Investment Objective") %></strong>
+								<strong class="chk-label"><%t APPLICATION.InvestmentObjective  "Investment Objective" %></strong>
 							</div>
 							<div class="col-sm-6">
 								<label for="inobjecta" class="cbox full">
 									<input type="checkbox" id="inobjecta" value="1" name="inobject" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Speculative',"Speculative") %></span>
+									<span class="itext"><%t APPLICATION.Speculative  "Speculative" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="inobjectb" class="cbox full">
 									<input type="checkbox" id="inobjectb" value="2" name="inobject">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Hedging',"Hedging") %></span>
+									<span class="itext"><%t APPLICATION.Hedging  "Hedging" %></span>
 								</label>
 							</div>
 						</div><!-- ./ ER [checkbox group] -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-sm-6">
-								<label for="{$FormName}_TradingExperience"><% _t('APPLICATION.TradingExperience',"Trading Experience") %></label>
+								<label for="{$FormName}_TradingExperience"><%t APPLICATION.TradingExperience  "Trading Experience" %></label>
 								$Fields.dataFieldByName(TradingExperience)
 							</div>
 						</div><!-- ./ ER [checkbox group]  -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<strong class="chk-label"><% _t('APPLICATION.Equities',"Equities") %></strong>
+								<strong class="chk-label"><%t APPLICATION.Equities  "Equities" %></strong>
 							</div>
 							<div class="col-sm-6">
 								<label for="equitiea" class="cbox full">
 									<input type="checkbox" id="equitiea" value="1" name="equitie" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.1To3',"1 - 3 Years") %></span>
+									<span class="itext"><%t APPLICATION.1To3  "1 - 3 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="equitieb" class="cbox full">
 									<input type="checkbox" id="equitieb" value="2" name="equitie">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.3To5',"3 - 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.3To5  "3 - 5 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="equitiec" class="cbox full">
 									<input type="checkbox" id="equitiec" value="3" name="equitie">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Over5',"Over 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.Over5  "Over 5 Years" %></span>
 								</label>
 							</div>
 						</div><!-- ./ ER [checkbox group] -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<strong class="chk-label"><% _t('APPLICATION.Options',"Options") %></strong>
+								<strong class="chk-label"><%t APPLICATION.Options  "Options" %></strong>
 							</div>
 							<div class="col-sm-6">
 								<label for="optiona" class="cbox full">
 									<input type="checkbox" id="optiona" value="1" name="option" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.1To3',"1 - 3 Years") %></span>
+									<span class="itext"><%t APPLICATION.1To3  "1 - 3 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="optionb" class="cbox full">
 									<input type="checkbox" id="optionb" value="2" name="option">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.3To5',"3 - 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.3To5  "3 - 5 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="optionc" class="cbox full">
 									<input type="checkbox" id="optionc" value="3" name="option">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Over5',"Over 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.Over5  "Over 5 Years" %></span>
 								</label>
 							</div>
 						</div><!-- ./ ER [checkbox group] -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<strong class="chk-label"><% _t('APPLICATION.FuturesCFDs',"Futures/CFDs") %></strong>
+								<strong class="chk-label"><%t APPLICATION.FuturesCFDs  "Futures/CFDs" %></strong>
 							</div>
 							<div class="col-sm-6">
 								<label for="futuresa" class="cbox full">
 									<input type="checkbox" id="futuresa" value="1" name="futures" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.1To3',"1 - 3 Years") %></span>
+									<span class="itext"><%t APPLICATION.1To3  "1 - 3 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="futuresb" class="cbox full">
 									<input type="checkbox" id="futuresb" value="2" name="futures">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.3To5',"3 - 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.3To5  "3 - 5 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="futuresc" class="cbox full">
 									<input type="checkbox" id="futuresc" value="3" name="futures">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Over5',"Over 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.Over5  "Over 5 Years" %></span>
 								</label>
 							</div>
 						</div><!-- ./ ER [checkbox group] -->
 
 						<div class="row"><!-- SR -->
 							<div class="col-xs-12">
-								<strong class="chk-label"><% _t('APPLICATION.FOREX',"FOREX") %></strong>
+								<strong class="chk-label"><%t APPLICATION.FOREX  "FOREX" %></strong>
 							</div>
 							<div class="col-sm-6">
 								<label for="forexa" class="cbox full">
 									<input type="checkbox" id="forexa" value="1" name="forex" checked>
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.1To3',"1 - 3 Years") %></span>
+									<span class="itext"><%t APPLICATION.1To3  "1 - 3 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="forexb" class="cbox full">
 									<input type="checkbox" id="forexb" value="2" name="forex">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.3To5',"3 - 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.3To5  "3 - 5 Years" %></span>
 								</label>
 							</div>
 							<div class="col-sm-6">
 								<label for="forexc" class="cbox full">
 									<input type="checkbox" id="forexc" value="3" name="forex">
 									<span class="items"></span>
-									<span class="itext"><% _t('APPLICATION.Over5',"Over 5 Years") %></span>
+									<span class="itext"><%t APPLICATION.Over5  "Over 5 Years" %></span>
 								</label>
 							</div>
 						</div><!-- ./ ER [checkbox group] -->
@@ -541,20 +541,20 @@
 							[animation classes here "animated tada"] -->
 					<div class="tab-pane animated tada" id="tab7">
 
-						<h2 class="heading"><% _t('APPLICATION.NextSteps',"Next Steps") %></h2>
+						<h2 class="heading"><%t APPLICATION.NextSteps  "Next Steps" %></h2>
 
 						<!-- [this file inputs uses validations] -->
 						<!-- give me the photo -->
-						<p>Please upload a high quality color copy of a current government issued identification showing your photo e.g. Passport, National Identity Card or Drivers License. </p>
+						<p><%t APPLICATION.UploadIDDisc  "Please upload a high quality color copy of a current government issued identification showing your photo e.g. Passport, National Identity Card or Drivers License." %></p>
 						<div class="up-btn">
-							<label for="{$FormName}_UploadID"  class="file-upload-label"><% _t('APPLICATION.UploadID',"Upload I.D.") %></label>
+							<label for="{$FormName}_UploadID"  class="file-upload-label"><%t APPLICATION.UploadID  "Upload I.D." %></label>
 							 $Fields.dataFieldByName(UploadID)
 						</div>
 
 						<!-- your documents -->
-						<p>Please upload a Bank Statement showing your name and address, the banks name and your account number. This should be dated within the last 6 months.</p>
+						<p><%t APPLICATION.UploadStatementDisc  "Please upload a Bank Statement showing your name and address, the banks name and your account number. This should be dated within the last 6 months." %></p>
 						<div class="up-btn">
-							<label for="{$FormName}_UploadStatement"  class="file-upload-label"><% _t('APPLICATION.UploadStatement',"Upload Statement") %></label>
+							<label for="{$FormName}_UploadStatement"  class="file-upload-label"><%t APPLICATION.UploadStatement  "Upload Statement" %></label>
 							$Fields.dataFieldByName(UploadStatement)
 						</div>
 					</div><!-- ./ single tab: 7 -->
