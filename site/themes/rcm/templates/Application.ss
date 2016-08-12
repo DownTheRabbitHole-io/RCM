@@ -23,12 +23,12 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="$ThemeDir/form/assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href="//apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="$ThemeDir/form/assets/css/bootstrap-select.css">
 	<link rel="stylesheet" href="$ThemeDir/form/assets/css/calendar.css">
 	<link rel="stylesheet" href="$ThemeDir/form/assets/css/animate.css">
 	<link rel="stylesheet" href="$ThemeDir/form/assets/css/style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
 </head>
 <body>
 <% include Header %>

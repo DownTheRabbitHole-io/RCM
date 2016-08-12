@@ -23,7 +23,7 @@
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="$ThemeDir/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
 
 </head>
