@@ -27,18 +27,9 @@
 						</ul>
 					</div>
 				</div><!-- ./ wizard tabs -->
-
-
-
 				<!-- wizard contents -->
 				<div class="tab-content">
-
-
-
-
-
-
-					<!-- single tab: 1
+				<!-- single tab: 1
 							[look at these two "animated fadeIn" animation classes, it is used to display whole form with fadein style.
 							If you do not need it then please remove these two classes. On every tab-pane you will found it but
 							with differnt animation class] -->
@@ -99,6 +90,7 @@
 									<span class="items"></span>
 									<span class="itext"><%t APPLICATION.Married  "Married" %></span>
 								</label>
+								<!--
 								<label for="mrtalstsc" class="cbox">
 									<input type="checkbox" id="mrtalstsc" value="3" name="mrtalsts">
 									<span class="items"></span>
@@ -114,6 +106,7 @@
 									<span class="items"></span>
 									<span class="itext"><%t APPLICATION.Widowed  "Widowed" %></span>
 								</label>
+								-->
 							</div><!-- ./ end of marital status -->
 
 						</div><!-- ./ ER -->
@@ -571,10 +564,10 @@
 					<div class="col-md-6">
 						<ul class="pager wizard cs-appcal-nav">
 							<li class="previous">
-								<a href="#">Back</a>
+								<a href="#"><%t APPLICATION.Back  "Back" %></a>
 							</li>
 							<li class="next">
-								<a href="#">Next</a>
+								<a href="#"><%t APPLICATION.Next  "Next" %></a>
 
 								<!-- YOUR_ACTION_BUTTON -->
 								$Actions.dataFieldByName(action_SendApplicationForm)

@@ -81,7 +81,7 @@
 						$('#Form_ApplicationForm_Nationality').parent().addClass('has-error');
 						return false;
 					}
-					// date of birst
+					// date of birth
 					if(!$('#Form_ApplicationForm_DOB').hasClass('valid')) {
 						$('#Form_ApplicationForm_DOB').addClass('error');
 						$('#Form_ApplicationForm_DOB').parent().addClass('has-error');
@@ -216,11 +216,10 @@
 		$('#cs-appcal-wizard select').selectpicker();
 
 		// init date picker
-		$('#Form_ApplicationForm_DOB').DatePicker({
-			startDate: moment(),
-			endDate: moment(),
-			locale: 'nz',
-			format: 'YYYY-MM-DD'
+		$('#Form_ApplicationForm_DOB').datepicker({
+			dateFormat: 'yy-mm-dd',
+			changeYear: true,
+			yearRange: "-80:+0"
 		});
 
 		// init validation

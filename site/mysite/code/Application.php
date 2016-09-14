@@ -56,12 +56,12 @@ class Application_Controller extends Page_Controller{
 			TextField::create('FirstName', _t('APPLICATION.FirstName',"FirstName"))
 				->setAttribute('class', 'form-control')
 				->setAttribute('data-validation', 'required length')
-				->setAttribute('data-validation-length', '3-20')
+				->setAttribute('data-validation-length', '1-20')
 				->setAttribute('data-validation-error-msg', "Really? it's your first name"),
 			TextField::create('Surname', _t('APPLICATION.Surname',"Surname / Family name"))
 				->setAttribute('class', 'form-control')
 				->setAttribute('data-validation', 'required length')
-				->setAttribute('data-validation-length', '2-20'),
+				->setAttribute('data-validation-length', '1-20'),
 			TextField::create('Nationality', _t('APPLICATION.Nationality',"Nationality"))
 				->setAttribute('class', 'form-control')
 				->setAttribute('data-validation', 'required')
@@ -98,7 +98,7 @@ class Application_Controller extends Page_Controller{
 			TextField::create('AccountHoldersName', _t('APPLICATION.AccountHoldersName',"Account Holders Name"))
 				->setAttribute('class', 'form-control')
 				->setAttribute('data-validation', 'required length')
-				->setAttribute('data-validation-length', '5-70'),
+				->setAttribute('data-validation-length', '1-70'),
 			TextField::create('AccountNumber', _t('APPLICATION.AccountNumber',"Account Number"))
 				->setAttribute('class', 'form-control')
 				->setAttribute('data-validation', 'number length')
@@ -153,7 +153,7 @@ class Application_Controller extends Page_Controller{
 
         // Create action
         $actions = new FieldList(
-            FormAction::create('SendApplicationForm', _t('APPLICATION.SEND',"Send Application"))
+            FormAction::create('SendApplicationForm', _t('APPLICATION.Send',"Send Application"))
 				->setAttribute('class', 'cs-submit')
         );
 
@@ -185,7 +185,7 @@ class Application_Controller extends Page_Controller{
 			case 2:
 				$ApplicationModel->MaritalStatus = 'Married';
 			break;
-			case 3:
+			/*case 3:
 				$ApplicationModel->MaritalStatus = 'Defacto';
 			break;
 			case 4:
@@ -193,7 +193,7 @@ class Application_Controller extends Page_Controller{
 			break;
 			case 5:
 				$ApplicationModel->MaritalStatus = 'Widowed';
-			break;
+			break;*/
 		}
 
 		if($data['inctype'] == 1){

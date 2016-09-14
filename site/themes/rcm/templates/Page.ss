@@ -13,7 +13,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	$MetaTags(false)
 	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="$ThemeDir/form/assets/js/html5shiv.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="$ThemeDir/bower_components/skeleton/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="$ThemeDir/bower_components/fullpage.js/dist/jquery.fullpage.min.css" />
@@ -22,8 +22,8 @@
 
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-	<script src="http://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+	<script src="$ThemeDir/javascript/TweenMax.min.js"></script>
+	<script src="$ThemeDir/javascript/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="$ThemeDir/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
 
 </head>
