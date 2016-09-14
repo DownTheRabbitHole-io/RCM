@@ -60,7 +60,7 @@ zh_CN:
     UploadIDDisc: '请上传一份由政府所发带有照片的身份证明彩色复印件，如身份证、护照。'
     UploadStatementDisc: '请上传一份显示银行信息和账号的银行卡彩色复印件。'
     Next: '下一步'
-    Back: '回去'
+    Back: '返回'
   CONTACT:
     FULLNAME: '姓名'
     PHONE: '电话'
