@@ -489,18 +489,6 @@
 						</div><!-- ./ ER [checkbox group] -->
 
 					</div><!-- ./ single tab: 4 -->
-
-
-
-
-
-
-
-
-
-
-
-
 					<!-- single tab: 5
 								[animation classes here "animated pulse"] -->
 					<div class="tab-pane animated pulse" id="tab5">

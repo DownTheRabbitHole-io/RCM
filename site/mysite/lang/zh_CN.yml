@@ -61,6 +61,8 @@ zh_CN:
     UploadStatementDisc: '请上传一份显示银行信息和账号的银行卡彩色复印件。'
     Next: '下一步'
     Back: '返回'
+    Size: '文件过大'
+    Nothing: '请选择上传文件'
   CONTACT:
     FULLNAME: '姓名'
     PHONE: '电话'

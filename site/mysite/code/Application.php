@@ -140,15 +140,13 @@ class Application_Controller extends Page_Controller{
 			FileField::create('UploadID','Upload I.D.')
 			    ->setAttribute('class', 'file-upload-input')
 				->setAttribute('data-validation', 'size required')
-				->setAttribute('data-validation-max-size', '800kb')
-				->setAttribute('data-validation-error-msg-size', 'File is too large')
-				->setAttribute('data-validation-error-msg-required', 'Nothing is selected'),
+				->setAttribute('data-validation-error-msg-size', _t('APPLICATION.Size',"File is too large"))
+				->setAttribute('data-validation-error-msg-required', _t('APPLICATION.Nothing',"Nothing is selected")),
 			FileField::create('UploadStatement','Upload Statement')
 			    ->setAttribute('class', 'file-upload-input')
 				->setAttribute('data-validation', 'size required')
-				->setAttribute('data-validation-max-size', '3mb')
-				->setAttribute('data-validation-error-msg-size', 'File is too large')
-				->setAttribute('data-validation-error-msg-required', 'Nothing is selected')
+				->setAttribute('data-validation-error-msg-size', _t('APPLICATION.Size',"File is too large"))
+				->setAttribute('data-validation-error-msg-required', _t('APPLICATION.Nothing',"Nothing is selected"))
 		);
 
         // Create action
