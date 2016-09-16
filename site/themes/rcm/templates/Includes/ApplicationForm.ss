@@ -76,7 +76,6 @@
 									<span class="itext"><%t APPLICATION.Female  "Female" %></span>
 								</label>
 							</div>
-
 							<!-- checkbox column for marital status -->
 							<div class="col-sm-6">
 								<strong class="chk-label"><%t APPLICATION.MaritalStatus  "Marital Status" %></strong>
@@ -90,23 +89,6 @@
 									<span class="items"></span>
 									<span class="itext"><%t APPLICATION.Married  "Married" %></span>
 								</label>
-								<!--
-								<label for="mrtalstsc" class="cbox">
-									<input type="checkbox" id="mrtalstsc" value="3" name="mrtalsts">
-									<span class="items"></span>
-									<span class="itext"><%t APPLICATION.Defacto  "Defacto" %></span>
-								</label>
-								<label for="mrtalstsd" class="cbox">
-									<input type="checkbox" id="mrtalstsd" value="4" name="mrtalsts">
-									<span class="items"></span>
-									<span class="itext"><%t APPLICATION.Divorced  "Divorced" %></span>
-								</label>
-								<label for="mrtalstse" class="cbox">
-									<input type="checkbox" id="mrtalstse" value="5" name="mrtalsts">
-									<span class="items"></span>
-									<span class="itext"><%t APPLICATION.Widowed  "Widowed" %></span>
-								</label>
-								-->
 							</div><!-- ./ end of marital status -->
 
 						</div><!-- ./ ER -->
@@ -339,7 +321,7 @@
 							</div>
 							<div class="col-sm-6">
 								<label for="anworthb" class="cbox full">
-									<input type="checkbox" id="anworthb" value="2" name="anworth[">
+									<input type="checkbox" id="anworthb" value="2" name="anworth">
 									<span class="items"></span>
 									<span class="itext">$50,001 - $250,000</span>
 								</label>

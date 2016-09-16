@@ -45,6 +45,7 @@ label{
 	background: #fff;
 	padding: 30px 50px;
 	border-radius: 3px;
+	tab-size: 50;
 }
 
 #cs-appcal-wizard  .tab-content .heading {
@@ -182,9 +183,16 @@ label{
     font-weight: normal;
     font-size: 13px;
     margin-bottom: 7px;
-	float: left;
 	width: 50%;
 }
+
+@media (min-width: 768px) {
+	#cs-appcal-wizard .tab-content .row label.cbox {
+	float: left;
+	}
+}
+
+
 
 #cs-appcal-wizard .tab-content .row label.cbox.full {
 	width: 100%;
